@@ -5,7 +5,8 @@ WITH user_tweet_num AS (
   FROM
     tweets
   WHERE
-    tweet_date >= '2022-01-01 00:00:00'
+    tweet_date >= '2022-01-01'
+    AND tweet_date <= '2022-12-31'
   GROUP BY
     user_id
 )
